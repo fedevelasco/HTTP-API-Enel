@@ -1,0 +1,13 @@
+<permissions>
+  <niagara-permission-groups type='station'>
+    <req-permission>
+      <name>NETWORK_COMMUNICATION</name>
+      <purposeKey>This module needs to setup socket communication.</purposeKey>
+      <parameters>
+        <parameter name='hosts' value='*'></parameter>
+        <parameter name='ports' value='*'></parameter>
+        <parameter name='type' value='all'></parameter>
+      </parameters>
+    </req-permission>
+  </niagara-permission-groups>
+</permissions>

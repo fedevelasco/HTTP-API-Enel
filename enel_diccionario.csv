@@ -1,0 +1,9 @@
+namespace,e,,,,,,,,,,
+,,,,,,Validity Rules,,,,,
+Section,Rule Name,Group Name,Tag name,Type,Smart Type,hasTags,hasAncestor,isType,hasRelation,hasRelationFilter,Units
+TagDefinitions,,,,,,,,,,,
+,,,enel,Marker,,,,,,,
+,,,p,String,,,,,,,
+,,,did,String,,,,,,,
+TagGroupDefinitions,,,,,,,,,,,
+RelationDefinitions,,,,,,,,,,,

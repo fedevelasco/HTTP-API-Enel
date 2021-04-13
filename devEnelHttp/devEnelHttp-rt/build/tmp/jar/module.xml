@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="devEnelHttp-rt" bajaVersion="0" vendor="ISAE" vendorVersion="1.0" description="Module to use the Enel HTTP API" preferredSymbol="deh" nre="true" autoload="true" installable="true" buildMillis="1597766401805" buildHost="CAVAL22" moduleName="devEnelHttp" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.8"/>
+  <dependency name="alarm-rt" vendor="Tridium" vendorVersion="4.8"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.8"/>
+  <dependency name="history-rt" vendor="Tridium" vendorVersion="4.8"/>
+  <dependency name="search-rt" vendor="Tridium" vendorVersion="4.8"/>
+  <dependency name="bql-rt" vendor="Tridium" vendorVersion="4.8"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type class="com.isae.devEnelHttp.BHttpEnelService" name="HttpEnelService"/>
+  <type class="com.isae.devEnelHttp.BPostWorker" name="PostWorker"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="station">
+   <req-permission>
+    <name>NETWORK_COMMUNICATION</name>
+    <purposeKey>This module needs to setup socket communication.</purposeKey>
+    <parameters>
+     <parameter name="hosts" value="*"/>
+     <parameter name="ports" value="*"/>
+     <parameter name="type" value="all"/>
+    </parameters>
+   </req-permission>
+  </niagara-permission-groups>
+ </permissions>
+ <moduleParts>
+  <modulePart name="devEnelHttp-wb" runtimeProfile="wb"/>
+  <modulePart name="devEnelHttp-se" runtimeProfile="se"/>
+  <modulePart name="devEnelHttp-ux" runtimeProfile="ux"/>
+ </moduleParts>
+</module>

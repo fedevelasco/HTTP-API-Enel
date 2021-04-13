@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="devEnelHttp-se" bajaVersion="0" vendor="ISAE" vendorVersion="1.0" description="Module to use the Enel HTTP API" preferredSymbol="deh" nre="true" autoload="true" installable="true" buildMillis="1597765612198" buildHost="CAVAL22" moduleName="devEnelHttp" runtimeProfile="se">
+ <dependencies>
+  <dependency name="devEnelHttp-ux" vendor="ISAE" vendorVersion="1.0"/>
+  <dependency name="devEnelHttp-rt" vendor="ISAE" vendorVersion="1.0"/>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.8"/>
+  <dependency name="alarm-rt" vendor="Tridium" vendorVersion="4.8"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.8"/>
+  <dependency name="history-rt" vendor="Tridium" vendorVersion="4.8"/>
+  <dependency name="devEnelHttp-wb" vendor="ISAE" vendorVersion="1.0"/>
+  <dependency name="search-rt" vendor="Tridium" vendorVersion="4.8"/>
+  <dependency name="bql-rt" vendor="Tridium" vendorVersion="4.8"/>
+ </dependencies>
+ <dirs/>
+ <types/>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+</module>

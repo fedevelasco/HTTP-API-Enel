@@ -1,0 +1,40 @@
+/* Module Build File */
+
+description     = "Module to use the Enel HTTP API"
+ext {
+}
+niagaraModule {
+  moduleName = "devEnelHttp"
+  preferredSymbol = "deh"
+  runtimeProfile = "rt"
+
+  modulePart {
+      name = "devEnelHttp-wb"
+      runtimeProfile = "wb"
+  }
+
+  modulePart {
+      name = "devEnelHttp-se"
+      runtimeProfile = "se"
+  }
+
+  modulePart {
+      name = "devEnelHttp-ux"
+      runtimeProfile = "ux"
+  }
+}
+
+dependencies {
+  compile "Tridium:nre:4.8"
+  compile "Tridium:baja:4.8"
+  compile "Tridium:alarm-rt:4.8"
+  compile "Tridium:bql-rt:4.8"
+  compile "Tridium:control-rt:4.8"
+  compile "Tridium:history-rt:4.8"
+    compile "Tridium:search-rt:4.8"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}
